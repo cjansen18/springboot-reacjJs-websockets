@@ -4,6 +4,7 @@ import './App.css';
 import './fixed-data-table.css'
 import FixedDataTable from 'fixed-data-table';
 
+
 const {Table, Column, Cell} = FixedDataTable;
 
 const TextCell = ({rowIndex, data, col, ...props}) => (
@@ -81,7 +82,7 @@ export default class App extends React.Component {
                         />
 
                         <Column
-                            header={<Cell>CJ Price</Cell>}
+                            header={<Cell>Jansen Price!</Cell>}
                             cell={<TextCell data={this.state.stocks} col="l" />}
                             fixed={false}
                             width={200}
